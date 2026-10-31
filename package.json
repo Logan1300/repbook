@@ -1,0 +1,23 @@
+{
+  "name": "repbook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RepBook — a minimal workout tracker for Android (strength, calisthenics, cardio, yoga, sports).",
+  "scripts": {
+    "build:web": "python3 build.py",
+    "build:native": "python3 build.py --native && cp node_modules/@capacitor/core/dist/capacitor.js www/"
+  },
+  "dependencies": {
+    "@capacitor-community/keep-awake": "^8.0.1",
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/local-notifications": "^8.2.1",
+    "@capacitor/preferences": "^8.0.1",
+    "@capacitor/share": "^8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0"
+  }
+}
